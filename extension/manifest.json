@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Kifty",
+	"version": "1.0.0",
+	"description": "Keys from Tube That's Yours for Plane That Floats. Video player hotkeys: J/K/L, speed, frame step, theater, miniplayer, ? help.",
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"64": "icon64.png"
+	},
+	"action": {
+		"default_title": "Kifty",
+		"default_icon": {
+			"16": "icon16.png",
+			"32": "icon32.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://www.floatplane.com/*", "https://beta.floatplane.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	]
+}

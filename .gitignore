@@ -1,0 +1,10 @@
+# Xcode build output of the Safari extension wrapper
+safari-app/**/build/
+xcuserdata/
+.DS_Store
+
+# Scratch files
+tmp/
+
+# Formatter dependencies
+node_modules/

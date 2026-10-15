@@ -1,0 +1,11 @@
+{
+	"name": "kifty",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write . && xcrun swift-format format --in-place --recursive safari-app",
+		"format:check": "prettier --check . && xcrun swift-format lint --strict --recursive safari-app"
+	},
+	"devDependencies": {
+		"prettier": "3.9.10"
+	}
+}

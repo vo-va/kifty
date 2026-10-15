@@ -1,0 +1,11 @@
+# Rules for the browser extension. Not marked root, so the repository's .editorconfig (UTF-8, LF, final newline,
+# trimmed trailing whitespace) still applies; this file adds the extension's own limits on top.
+
+[*]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+# Same line limit as .prettierrc.json, so editors draw the ruler where Prettier wraps.
+[*.{js,json,css,html,md}]
+max_line_length = 120
